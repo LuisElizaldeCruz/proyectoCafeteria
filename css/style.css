@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: chocolate;
+}
+
+/*
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    background-color: aquamarine;
+}
+*/
+li{
+    padding: 8px 14px;
+    text-align: right;
+}
+
+a{
+    text-decoration: none;
+}
+
+li:hover{
+    background-color: cadetblue;
+}
