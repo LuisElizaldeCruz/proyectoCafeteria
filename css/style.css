@@ -45,11 +45,13 @@ a{
 }
 
 a:hover{
-    color: rgb(248, 248, 248);
+    color: red;
 }
 
 li:hover{
-    background-color: #af6740;
+    /* background-color: #af6740; */
+    text-decoration: underline;
+    
 }
 
 .container-cabecera{
