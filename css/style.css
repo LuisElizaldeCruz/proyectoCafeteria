@@ -10,6 +10,7 @@
 ul {
     list-style-type: none;
     display: flex;
+    
 }
 
 nav {
@@ -25,6 +26,11 @@ nav {
     padding: 0 30px;
     scroll-behavior: smooth;
     z-index: 3;
+}
+
+.menuOpciones{
+    display: flex;
+    align-items: center;
 }
 
 li {
