@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pizzeria</title>
+    <link rel="shortcut icon" href="./assets/imagenes/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
@@ -12,30 +14,50 @@
 
 <body>
     <nav>
-        <img class="logo" src="./assets/imagenes/logo.jpg" alt="">
-        <div class="menuOpciones">
+        <img class="logo" src="./assets/imagenes/logo.jpg" alt="logo">
         <ul>
             <li><a href="#">Pizzas</a></li>
             <li><a href="#">Empanadas</a></li>
             <li><a href="#">Bebidas</a></li>
             <li><a href="#">Postres</a></li>
         </ul>
-        <img class="carrito" src="./assets/iconos/shopping-cart.svg" alt="carrito">
-    </div>
     </nav>
-
-    <div class="cabecera">
-        <!-- <div class="cabecera__imagen"></div> -->
-       
-            <p class="cabecera__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus beatae voluptatibus perferendis quas,
+    <main class="container">
+        <div class="cabecera">
+            <h2>menu del dia</h2>
+            <p class="cabecera__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus beatae
+                voluptatibus perferendis quas,
                 tempora, ipsam distinctio alias voluptates assumenda odit soluta hic nesciunt? Ab distinctio, itaque
                 quas quis voluptatum reprehenderit?</p>
-      
-    </div>
+        </div>
 
-   <main>
+        <section class="carta">
+            <div class="carta__producto"r>
+                <img class="imgProducto" src="./assets/imagenes/empanada_atun.jpg" alt="empanada">
+                <div class="producto__info">
+                    <h3>Empanada de atun</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti excepturi aspernatur aut, illum commodi possimus laborum libero vitae totam ex officia labore asperiores architecto consectetur odio sequi, beatae molestias aperiam!</p>
+                    <button type="button" class="btnComprar">comprar</button>
+                </div>
+            </div>
 
-   </main>
+            <div class="carta__producto"r>
+                <div class="producto__info">
+                    <h3>Empanada de atun</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti excepturi aspernatur aut, illum commodi possimus laborum libero vitae totam ex officia labore asperiores architecto consectetur odio sequi, beatae molestias aperiam!</p>
+                    <button type="button" class="btnComprar">comprar</button>
+                </div>
+                <img class="imgProducto" src="./assets/imagenes/empanada_atun.jpg" alt="empanada">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="footerInformacion">
+            <li><a href="#">Acerca de nostros</a></li>
+            <li><a href="#">Nuesras sucursales</a></li>
+        </ul>
+    </footer>
 
 </body>
 

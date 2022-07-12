@@ -1,6 +1,18 @@
+:root{
+    --chocolote: #47261a;
+    --greyM: #9c886f;
+    --beige: #ddc08d;
+    --marronCafe: #cb8034;
+    --marronCafeDark: #66260b;
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body{
+    background-color: var(--beige);
 }
 
 .logo {
@@ -21,16 +33,11 @@ nav {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    background-color: #D9411E;
+    background-color: var(--chocolote);
     align-items: center;
     padding: 0 30px;
     scroll-behavior: smooth;
     z-index: 3;
-}
-
-.menuOpciones{
-    display: flex;
-    align-items: center;
 }
 
 li {
@@ -39,7 +46,7 @@ li {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.5rem;
 }
 
@@ -59,20 +66,98 @@ li:hover {
     position: relative;
     background-color: #da8a2f;
     display: flex;
+    background-image: url("../assets/imagenes/cafes/cafe-multiples.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
-.cabecera__descripcion {
+.cabecera h2, .cabecera p{
+    width: 80%;
+}
+
+.cabecera h2{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.cabecera p{
+    font-size: 2rem;
+}
+
+.cabecera__descripcion li{
     padding: 10px;
     width: 70%;
     margin: auto;
     align-items: center;
 }
 
-.cuerpo {
-    height: 100vh;
+.carta{
+    margin-top: 30px;
 }
 
-.carrito {
+.carta__producto{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.imgProducto{
+    height: 300px;
+    border-radius: 10px;
+}
+
+.producto__info{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* text-align: center; */
+    justify-content: space-evenly;
+    height: 300px;
+    width: 300px;
+}
+
+.btnComprar{
     height: 40px;
-    width: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(187, 16, 16);
+    color: white;
+    border-color: transparent;
+    border-style: solid;
+    font-weight: 200;
+}
+
+.btnComprar:hover{
+    background-color: var(--chocolote);
+    color: white;
+    transition: background-color .25s linear;
+}
+
+
+
+
+/* footer */
+footer{
+    height: 100px;
+    background-color: black;
+    margin-top: 50px;
+}
+
+.footerInformacion{
+    display: block;
+}
+
+.footerInformacion li {
+    margin: 10px auto;
+    padding: 1px;
+}
+
+.footerInformacion a{
+    color: white;
+    font-size: 1rem;
 }
