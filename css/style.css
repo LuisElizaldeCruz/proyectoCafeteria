@@ -1,4 +1,4 @@
-:root{
+:root {
     --chocolote: #47261a;
     --greyM: #9c886f;
     --beige: #ddc08d;
@@ -11,9 +11,6 @@
     padding: 0;
 }
 
-body{
-    background-color: var(--beige);
-}
 
 .logo {
     height: 70px;
@@ -22,7 +19,7 @@ body{
 ul {
     list-style-type: none;
     display: flex;
-    
+
 }
 
 nav {
@@ -66,62 +63,85 @@ li:hover {
     position: relative;
     background-color: #da8a2f;
     display: flex;
-    background-image: url("../assets/imagenes/cafes/cafe-multiples.jpg") ;
+    background-image: url("../assets/imagenes/cafes/cafe-multiples.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
     justify-content: center;
-
+    background-attachment: fixed;
 }
 
-.cabecera h2, .cabecera p{
+.cabecera h2,
+.cabecera p {
     width: 80%;
 }
 
-.cabecera h2{
+.cabecera h2 {
     font-size: 4rem;
     margin-bottom: 20px;
 }
 
-.cabecera p{
+.cabecera p {
     font-size: 2rem;
+    margin-bottom: 50px;
 }
 
-.cabecera__descripcion li{
+.cabecera__descripcion li {
     padding: 10px;
     width: 70%;
     margin: auto;
     align-items: center;
 }
 
-.carta{
+.cabecera>.btnSaber {
+    background-color: transparent;
+    border-color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    border-style: solid;
+    color: white;
+    cursor: pointer;
+}
+
+.carta {
     margin-top: 30px;
 }
 
-.carta__producto{
+.carta>h2 {
+    color: var(--marronCafe);
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.carta__producto {
     width: auto;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 80px;
     margin-bottom: 100px;
 }
 
-.imgProducto{
+.imgProducto {
     height: 300px;
     border-radius: 10px;
 }
 
-.producto__info{
+.producto__info {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* text-align: center; */
     justify-content: space-evenly;
     height: 300px;
-    width: 300px;
+    width: 400px;
+    text-align: justify;
 }
 
-.btnComprar{
+.producto__info h3 {
+    color: var(--marronCafeDark);
+    font-size: 2rem;
+}
+
+.btnComprar {
     height: 40px;
     width: 150px;
     border-radius: 10px;
@@ -132,32 +152,35 @@ li:hover {
     font-weight: 200;
 }
 
-.btnComprar:hover{
+.btnComprar:hover {
     background-color: var(--chocolote);
     color: white;
     transition: background-color .25s linear;
+    cursor: pointer;
 }
 
 
 
 
 /* footer */
-footer{
+footer {
     height: 100px;
     background-color: black;
     margin-top: 50px;
+    display: flex;
+    align-items: center;
 }
 
-.footerInformacion{
+.footerInformacion {
     display: block;
 }
 
 .footerInformacion li {
-    margin: 10px auto;
+    /* margin: 10px auto; */
     padding: 1px;
 }
 
-.footerInformacion a{
+.footerInformacion a {
     color: white;
     font-size: 1rem;
 }
