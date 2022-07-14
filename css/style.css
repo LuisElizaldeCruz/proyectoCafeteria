@@ -6,25 +6,14 @@
     --marronCafeDark: #66260b;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
 .logo {
     height: 70px;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-
+    width: 70px;
 }
 
 nav {
     height: 80px;
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,35 +21,44 @@ nav {
     top: 0;
     background-color: var(--chocolote);
     align-items: center;
-    padding: 0 30px;
+    /* padding: 0 30px; */
     scroll-behavior: smooth;
     z-index: 3;
 }
 
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
 li {
-    padding: 20px 14px;
+    padding: 20px 0;
+    margin-right: 10px;
 }
 
 a {
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
-}
-
-a:hover {
-    color: white;
+    font-size: 20px;
 }
 
 li:hover {
     text-decoration: underline;
 }
 
+.container {
+    width: auto;
+    height: auto;
+    padding: 0 20px;
+}
+
+
 .cabecera {
     height: 100vh;
     width: auto;
     align-items: center;
     text-align: center;
-    position: relative;
+    /* position: relative; */
     background-color: #da8a2f;
     display: flex;
     background-image: url("../assets/imagenes/cafes/cafe-multiples.jpg");
@@ -71,29 +69,23 @@ li:hover {
     background-attachment: fixed;
 }
 
-.cabecera h2,
-.cabecera p {
-    width: 80%;
+body {
+    margin: 0;
 }
 
 .cabecera h2 {
-    font-size: 4rem;
+    font-size: 48px;
     margin-bottom: 20px;
+    /* width: auto; */
 }
 
 .cabecera p {
-    font-size: 2rem;
+    font-size: 24px;
     margin-bottom: 50px;
+    width: 80%;
 }
 
-.cabecera__descripcion li {
-    padding: 10px;
-    width: 70%;
-    margin: auto;
-    align-items: center;
-}
-
-.cabecera>.btnSaber {
+.btnSaber {
     background-color: transparent;
     border-color: white;
     height: 40px;
@@ -106,33 +98,39 @@ li:hover {
 
 .carta {
     margin-top: 30px;
+    height: auto;
 }
 
 .carta>h2 {
     color: var(--marronCafe);
-    font-size: 3rem;
+    font-size: 40px;
     margin-bottom: 50px;
 }
 
 .carta__producto {
-    width: auto;
+    /* width: auto; */
+    height: auto;
     display: flex;
     justify-content: center;
-    gap: 80px;
     margin-bottom: 100px;
 }
 
 .imgProducto {
     height: 300px;
     border-radius: 10px;
+    /* width: 30%; */
+    width: 40%;
+    margin: 0 10%;
+
 }
 
 .producto__info {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     height: 300px;
-    width: 400px;
+    /* width: 400px; */
+    width: 35%;
     text-align: justify;
 }
 
@@ -159,9 +157,6 @@ li:hover {
     cursor: pointer;
 }
 
-
-
-
 /* footer */
 footer {
     height: 100px;
@@ -183,4 +178,40 @@ footer {
 .footerInformacion a {
     color: white;
     font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        width: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav>ul li {
+        padding: 0;
+    }
+
+    /* .carta{
+        width: auto;
+    } */
+
+    .carta>h2 {
+        font-size: 2rem;
+    }
+
+    .carta__producto {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .producto__info {
+        width: auto;
+        height: auto;
+    }
+
+    .imgProducto {
+        height: auto;
+    }
 }
